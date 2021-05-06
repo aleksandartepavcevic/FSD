@@ -1,0 +1,33 @@
+.pre-heading {
+  color: $color4;
+  font-size: $fs-xsm;
+  font-family: $font2;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.heading {
+  color: $color2;
+  font-family: $font1;
+  &-2 {
+    font-size: $fs-lg;
+
+    font-weight: 700;
+  }
+}
+
+.text {
+  color: $color2;
+
+  font-family: $font1;
+
+  &-major {
+    font-size: $fs-md;
+    font-weight: 500;
+  }
+
+  &-minor {
+    font-size: $fs-sm;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.pre-heading {
+  color: #fa292c;
+  font-size: 1.2rem;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  letter-spacing: 3px; }
+
+.heading {
+  color: #212121;
+  font-family: "Montserrat"; }
+  .heading-2 {
+    font-size: 3.6rem;
+    font-weight: 700; }
+
+.text {
+  color: #212121;
+  font-family: "Montserrat"; }
+  .text-major {
+    font-size: 1.8rem;
+    font-weight: 500; }
+  .text-minor {
+    font-size: 1.4rem;
+    font-weight: 400; }
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto; }
+
+.container-inner {
+  max-width: 1300px;
+  margin: 0 auto; }
+
+.home {
+  min-height: 720px;
+  background-color: #000002; }
+  .home .header {
+    padding: 40px 30px; }
+    .home .header .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .home .header .nav-links {
+        display: flex;
+        align-items: center; }
+        .home .header .nav-links ul {
+          display: flex;
+          list-style-type: none;
+          margin-right: 15px; }
+          .home .header .nav-links ul li {
+            color: #ffffff;
+            padding: 20px 15px;
+            position: relative;
+            cursor: pointer;
+            font-family: "Roboto Condensed";
+            font-size: 1.4rem; }
+            .home .header .nav-links ul li::after {
+              content: '';
+              width: 0%;
+              height: 1px;
+              background-color: #fa292c;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              transition: width 300ms ease-in-out; }
+            .home .header .nav-links ul li:hover::after {
+              width: 100%;
+              transition: width 300ms ease-in-out; }
+            .home .header .nav-links ul li:not(:last-of-type) {
+              margin-right: 15px; }
+        .home .header .nav-links .contact-us-cta {
+          font-family: "Roboto Condensed";
+          font-size: 1.4rem;
+          color: #ffffff;
+          padding: 1em 2em;
+          background-color: #ffffff2f;
+          border: none;
+          border-radius: 2px;
+          cursor: pointer;
+          transition: background-color 300ms ease-in-out; }
+          .home .header .nav-links .contact-us-cta:hover {
+            background-color: #fa292c; }
+
+.about-us {
+  background-color: #ffffff; }
+  .about-us-content {
+    min-height: 720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px; }
+    .about-us-content-left {
+      margin-right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .about-us-content-left img {
+        width: 100%;
+        min-width: 450px;
+        max-width: 550px;
+        z-index: 100; }
+      .about-us-content-left-background {
+        width: 350px;
+        height: 500px;
+        background-color: #212121;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10; }
+        .about-us-content-left-background::before {
+          content: 'A progressive design, a powerful engine.';
+          position: absolute;
+          width: 100%;
+          bottom: 25px;
+          left: 0;
+          color: #ffffff;
+          opacity: 0.5;
+          font-size: 1.2rem;
+          font-family: "Montserrat";
+          font-style: italic;
+          font-weight: 300;
+          text-align: center; }
+    .about-us-content-right {
+      margin-right: 50px;
+      max-width: 430px; }
+      .about-us-content-right .pre-heading {
+        margin-bottom: 10px; }
+      .about-us-content-right .heading-2 {
+        margin-bottom: 35px; }
+      .about-us-content-right .text-major {
+        margin-bottom: 20px; }

@@ -1,0 +1,69 @@
+.about-us {
+  background-color: $color3;
+
+  &-content {
+    min-height: 720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+
+    &-left {
+      margin-right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      img {
+        width: 100%;
+        min-width: 450px;
+        max-width: 550px;
+        z-index: 100;
+      }
+
+      &-background {
+        width: 350px;
+        height: 500px;
+        background-color: $color2;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+
+        &::before {
+          content: 'A progressive design, a powerful engine.';
+          position: absolute;
+          width: 100%;
+          bottom: 25px;
+          left: 0;
+          color: $color3;
+          opacity: 0.5;
+          font-size: $fs-xsm;
+          font-family: $font1;
+          font-style: italic;
+          font-weight: 300;
+          text-align: center;
+        }
+      }
+    }
+
+    &-right {
+      margin-right: 50px;
+      max-width: 430px;
+
+      .pre-heading {
+        margin-bottom: 10px;
+      }
+
+      .heading-2 {
+        margin-bottom: 35px;
+      }
+
+      .text-major {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
