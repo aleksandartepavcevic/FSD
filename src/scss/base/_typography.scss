@@ -2,32 +2,265 @@
   color: $color4;
   font-size: $fs-xsm;
   font-family: $font2;
-  font-weight: 400;
-  letter-spacing: 3px;
+  font-weight: 300;
+  letter-spacing: 7px;
+  margin-bottom: 15px;
+
+  &--white {
+    color: $color3;
+    font-weight: 300;
+    opacity: 1;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+
+    &-contact-us {
+      margin-bottom: 0;
+      letter-spacing: 1px;
+      font-weight: 400;
+      color: $color3;
+      opacity: 0.5;
+    }
+  }
+
+  &--contact-us {
+    margin-bottom: 20px;
+  }
 }
 
 .heading {
   color: $color2;
   font-family: $font1;
+
+  &-1 {
+    font-size: $fs-xlg;
+    font-weight: 700;
+    color: $color3;
+
+    @include media-breakpoint-down($sm) {
+      font-size: $fs-lg;
+    }
+
+    &--white {
+      line-height: 65px;
+    }
+  }
+
   &-2 {
     font-size: $fs-lg;
-
     font-weight: 700;
+    margin-bottom: 35px;
+
+    &--white {
+      font-weight: 600;
+      color: $color3;
+      margin: 10px 0 20px 0;
+    }
+  }
+
+  &--product {
+    font-size: $fs-lmd;
+    font-weight: 500;
+  }
+
+  &--equipment {
+    font-size: $fs-md;
+    margin-bottom: 10px;
   }
 }
 
 .text {
   color: $color2;
-
   font-family: $font1;
 
   &-major {
     font-size: $fs-md;
     font-weight: 500;
+    margin-bottom: 20px;
+
+    &--white {
+      color: $color3;
+      font-weight: 400;
+      opacity: 0.8;
+      padding-left: 60px;
+      position: relative;
+      margin-top: 60px;
+      line-height: 40px;
+      max-width: 400px;
+
+      &::before {
+        position: absolute;
+        left: 30px;
+        content: '';
+        width: 2px;
+        height: 100%;
+        background-color: $color4;
+      }
+    }
   }
 
   &-minor {
     font-size: $fs-sm;
     font-weight: 400;
+
+    &--white {
+      color: $color3;
+      font-weight: 300;
+      line-height: 30px;
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.value {
+  color: $color3;
+  font-size: $fs-lmd;
+  font-family: $font1;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.unit {
+  color: $color3;
+  font-size: $fs-sm;
+  font-family: $font1;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.filter-list-text {
+  color: $color1;
+  font-size: $fs-md;
+  font-family: $font1;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.45;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  position: relative;
+
+  transition: opacity 200ms ease-in-out;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: $color4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+  }
+
+  &:hover {
+    opacity: 1;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.pre-heading-product {
+  color: $color1;
+  opacity: 0.45;
+  font-size: $fs-sm;
+  font-weight: 500;
+  font-family: $font1;
+  margin: 10px 0;
+
+  &--price {
+    margin: 0;
+    font-size: $fs-xsm;
+    font-family: $font2;
+  }
+
+  &--configurator {
+    color: $color3;
+    opacity: 0.5;
+    font-weight: 200;
+    font-family: $font2;
+    font-size: $fs-xsm;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  &--equipment {
+    opacity: 0.7;
+
+    &-2 {
+      opacity: 1;
+      @include media-breakpoint-down($sm) {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+.heading-product {
+  color: $color2;
+  font-family: $font1;
+  font-size: $fs-md;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.configurator-product {
+  color: rgb(45, 101, 255);
+  font-size: $fs-xxsm;
+  font-weight: 500;
+  font-family: $font1;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.desc-list-product {
+  list-style-type: none;
+  margin-bottom: 30px;
+
+  li {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: $fs-xsm;
+    font-weight: 500;
+    font-family: $font1;
+    padding-left: 20px;
+    position: relative;
+
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+
+    &::before {
+      content: url(../../assets/Icons/Path.svg);
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+.price-product {
+  color: $color2;
+  font-family: $font1;
+  font-size: $fs-md;
+  font-weight: 700;
+
+  &--configurator {
+    color: $color3;
+    font-weight: 200;
+    font-size: $fs-lmd;
+  }
+
+  &--equipment {
+    font-weight: 600;
+
+    @include media-breakpoint-down($sm) {
+      font-size: $fs-sm;
+      text-align: end;
+    }
   }
 }

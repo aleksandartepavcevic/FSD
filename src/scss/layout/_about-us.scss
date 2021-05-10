@@ -6,7 +6,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    padding: 0px 20px;
+
+    @include media-breakpoint-down($sm) {
+      justify-content: flex-end;
+      flex-direction: column-reverse;
+      align-items: start;
+      padding: 40px 20px;
+    }
 
     &-left {
       margin-right: 30px;
@@ -15,11 +22,26 @@
       align-items: center;
       position: relative;
 
+      @include media-breakpoint-down($md) {
+        margin-left: -180px;
+      }
+
+      @include media-breakpoint-down($sm) {
+        margin-left: 0;
+        justify-content: left;
+        margin-top: 50px;
+        margin-right: 0;
+      }
+
       img {
         width: 100%;
         min-width: 450px;
         max-width: 550px;
         z-index: 100;
+
+        @include media-breakpoint-down($sm) {
+          min-width: unset;
+        }
       }
 
       &-background {
@@ -31,6 +53,10 @@
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
+
+        @include media-breakpoint-down($sm) {
+          display: none;
+        }
 
         &::before {
           content: 'A progressive design, a powerful engine.';
@@ -45,25 +71,16 @@
           font-style: italic;
           font-weight: 300;
           text-align: center;
+
+          @include media-breakpoint-down($md) {
+            content: '';
+          }
         }
       }
     }
 
     &-right {
-      margin-right: 50px;
       max-width: 430px;
-
-      .pre-heading {
-        margin-bottom: 10px;
-      }
-
-      .heading-2 {
-        margin-bottom: 35px;
-      }
-
-      .text-major {
-        margin-bottom: 20px;
-      }
     }
   }
 }

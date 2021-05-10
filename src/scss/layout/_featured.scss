@@ -1,0 +1,65 @@
+.featured {
+  position: relative;
+
+  &-content {
+    padding: 0 20px;
+    min-height: 540px;
+    max-width: 560px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include media-breakpoint-down($md) {
+      max-width: 400px;
+      min-height: 880px;
+    }
+
+    &-features {
+      display: flex;
+      justify-content: space-between;
+
+      .card {
+        background-color: rgba(255, 255, 255, 0.15);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 165px;
+        padding: 25px 0;
+        border: solid 1px rgba(255, 255, 255, 0.2);
+
+        &:not(:last-of-type) {
+          margin-right: 10px;
+        }
+
+        @include media-breakpoint-down($md) {
+          max-width: 165px;
+
+          &:not(:last-of-type) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &-background {
+    min-height: 540px;
+    background-image: linear-gradient(to right, $color1, rgba(255, 255, 255, 0)),
+      url(../../assets/Images/section-banner-1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+
+    @include media-breakpoint-down($md) {
+      min-height: 880px;
+    }
+  }
+}

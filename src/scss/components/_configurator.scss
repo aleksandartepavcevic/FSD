@@ -1,0 +1,117 @@
+.configurator-modal {
+  visibility: hidden;
+
+  .configurator {
+    width: 940px;
+    border-radius: 15px;
+    background-color: $color3;
+    display: flex;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+
+    @include media-breakpoint-down($lg) {
+      flex-direction: column;
+      width: 500px;
+    }
+
+    @include media-breakpoint-down($sm) {
+      width: 90%;
+    }
+
+    .car {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      background-color: $color8;
+      padding: 40px 60px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+
+      @include media-breakpoint-down($lg) {
+        width: 100%;
+        padding: 20px 30px;
+      }
+
+      .product-car-image {
+        margin-bottom: 15px;
+      }
+
+      .price {
+        background-color: $color2;
+        padding: 10px 0;
+        width: 100%;
+        border-radius: 15px;
+
+        @include media-breakpoint-down($lg) {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .equipment {
+      width: 65%;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include media-breakpoint-down($lg) {
+        width: 100%;
+      }
+
+      &-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0;
+
+        div {
+          display: flex;
+          align-items: center;
+
+          input {
+            margin-right: 10px;
+          }
+        }
+
+        &:not(:last-of-type) {
+          border-bottom: solid 1px hsla(240, 100%, 0%, 0.06);
+        }
+
+        input[type='checkbox']:checked {
+          background-color: $color2;
+        }
+      }
+    }
+
+    .exit {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 40px;
+      height: 40px;
+      background-color: $color2;
+      border-radius: 50%;
+      z-index: 11000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: $color3;
+      }
+    }
+  }
+}
+
+.open {
+  visibility: visible;
+}

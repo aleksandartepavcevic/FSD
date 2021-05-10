@@ -1,0 +1,51 @@
+.buy-now-cta {
+  color: $color4;
+  font-family: $font1;
+  font-weight: 500;
+  font-size: $fs-xsm;
+  padding: 0.7em 1.5em;
+  background-color: $color5;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact-us-cta {
+  font-family: $font2;
+  font-size: $fs-sm;
+  color: $color3;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 1em 2em;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 $color4;
+  transition: box-shadow 300ms ease-in-out;
+
+  &:hover {
+    box-shadow: inset 10em 0 0 0 $color4;
+  }
+}
+
+.submit-cta {
+  background-color: transparent;
+  border: solid 2px;
+  border-color: rgba(255, 255, 255, 0.35);
+  border-radius: 3px;
+  padding: 1.25em 2em;
+  color: $color3;
+  font-family: $font2;
+  font-weight: 400;
+  font-size: $fs-sm;
+  max-width: 150px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $color4;
+    color: $color4;
+  }
+}

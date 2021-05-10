@@ -5,57 +5,727 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>fSD radni zadatak</title>
+    <title>FSD radni zadatak</title>
   </head>
   <body>
-    <!-- Home section -->
-    <section class="home">
-      <!-- Header -->
-      <header class="header container">
-        <nav class="nav">
-          <a href="/"
-            ><img src="./assets/Logo/Audi-Logo_2016.svg" alt="audi-logo"
-          /></a>
-          <div class="nav-links">
-            <ul>
-              <li>HOMEPAGE</li>
-              <li>ABOUT US</li>
-              <li>PRODUCTS</li>
-            </ul>
-            <button class="contact-us-cta">CONTACT US</button>
+    <div class="wrapper">
+      <!-- Home section -->
+      <section class="home">
+        <!-- Header -->
+        <header class="header container">
+          <nav class="nav">
+            <a href="/"
+              ><img src="./assets/Logo/Audi-Logo_2016.svg" alt="audi-logo"
+            /></a>
+            <div class="nav-links">
+              <ul>
+                <li>HOMEPAGE</li>
+                <li>ABOUT US</li>
+                <li>PRODUCTS</li>
+              </ul>
+              <button class="contact-us-cta">CONTACT US</button>
+            </div>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="bars"
+              class="nav-hamburger-menu"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="currentColor"
+            >
+              <path
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              ></path>
+            </svg>
+          </nav>
+        </header>
+
+        <div class="home-content container-inner">
+          <div class="home-content-text">
+            <p class="pre-heading">NEW ARRIVAL</p>
+            <h1 class="heading heading-1 heading-1--white">
+              Expectations put limitations on possibilities.
+            </h1>
+            <p class="text text-major text-major--white">
+              The Audi Q8 offers a unique performance that blends sport and
+              utility into a momentous SUV design.
+            </p>
           </div>
-        </nav>
-      </header>
-
-      <!-- Slider -->
-    </section>
-
-    <!-- About us section -->
-    <section class="about-us">
-      <div class="about-us-content container-inner">
-        <div class="about-us-content-left">
-          <img src="./assets/Images/about-us-section.png" alt="Q8-image" />
-          <div class="about-us-content-left-background"></div>
         </div>
-        <div class="about-us-content-right">
-          <p class="pre-heading">ABOUT Q8</p>
-          <h1 class="heading heading-2">
-            Welcome to the 8th dimension. The new Audi Q8
-          </h1>
-          <h2 class="text text-major">
-            With its imposing Singleframe in octagonal design, the Audi Q8
-            presents the new face of the Q family.
-          </h2>
-          <p class="text text-minor">
-            The radiator grille combines with the forward-mounted spoiler and
-            the strongly contoured air inlets to underline its confident look.
+        <!-- Slider -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img
+            src="./assets/Images/header-img-1920.jpg"
+            alt="header-img-1920"
+          />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+            src="./assets/Images/header-img-1920.jpg"
+            alt="header-img-1920"
+          />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+            src="./assets/Images/header-img-1920.jpg"
+            alt="header-img-1920"
+          />
+          </div>
+
+          <a class="prev" id="left-arrow"><img src="./assets/Icons/chevron-right.svg" alt="arrow-icon"></a>
+          <a class="next" id="right-arrow"><img src="./assets/Icons/chevron-right.svg" alt="arrow-icon"></a>
+        </div>
+      </section>
+
+      <!-- About us section -->
+      <section class="about-us">
+        <div class="about-us-content container-inner">
+          <div class="about-us-content-left">
+            <img src="./assets/Images/about-us-section.png" alt="Q8-image" />
+            <div class="about-us-content-left-background"></div>
+          </div>
+          <div class="about-us-content-right">
+            <p class="pre-heading">ABOUT Q8</p>
+            <h1 class="heading heading-2">
+              Welcome to the 8th dimension. The new Audi Q8
+            </h1>
+            <h2 class="text text-major">
+              With its imposing Singleframe in octagonal design, the Audi Q8
+              presents the new face of the Q family.
+            </h2>
+            <p class="text text-minor">
+              The radiator grille combines with the forward-mounted spoiler and
+              the strongly contoured air inlets to underline its confident look.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured section -->
+      <section class="featured">
+        <div class="container-inner" style="position: relative">
+          <div class="featured-content">
+            <p class="pre-heading">FEATURED</p>
+            <h1 class="heading heading-2 heading-2--white">
+              Brand new The Audi RSQ8
+            </h1>
+            <p class="text text-minor text-minor--white">
+              The RS Q8 gives you the choice: depending on the selected
+              equipment, its looks are even bolder and sportier to suit your
+              personal ambitions
+            </p>
+
+            <div class="featured-content-features">
+              <div class="card">
+                <p class="pre-heading pre-heading--white">POWER OUTPUT</p>
+                <h3 class="value">441 kW</h3>
+                <p class="unit">(600 hp)</p>
+              </div>
+              <div class="card">
+                <p class="pre-heading pre-heading--white">ACCELERATION</p>
+                <h3 class="value">3.8</h3>
+                <p class="unit">seconds</p>
+              </div>
+              <div class="card">
+                <p class="pre-heading pre-heading--white">TORQUE</p>
+                <h3 class="value">800</h3>
+                <p class="unit">Nm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-background container-banner"></div>
+      </section>
+
+      <!-- Products section -->
+      <section class="products">
+        <div class="products-content container-inner">
+          <h1 class="heading heading-2">You might take a look...</h1>
+          <ul class="products-filter">
+            <li class="filter-list-text">All</li>
+            <li class="filter-list-text">Hatchback</li>
+            <li class="filter-list-text">Sportback</li>
+            <li class="filter-list-text">Limousine</li>
+            <li class="filter-list-text">SUV</li>
+            <li class="filter-list-text">Cabrio</li>
+          </ul>
+
+          <div class="products-content-cars">
+            <div class="product-car">
+              <div class="product-car-image">
+                <img
+                  src="./assets/Products/product-card-audi-q3.png"
+                  alt="Audi-Q3"
+                />
+              </div>
+              <div class="product-car-about">
+                <p class="pre-heading-product">5 seats, 4 doors</p>
+                <h2 class="heading-product">Audi Q3 2020</h2>
+                <p class="configurator-product" id="configurator-1">
+                  Configurator
+                </p>
+              </div>
+
+              <ul class="desc-list-product">
+                <li>Includes 300 free km</li>
+                <li>Theft Protection</li>
+                <li>Non Refundable</li>
+              </ul>
+
+              <div class="product-car-pricing">
+                <div class="product-car-pricing-price">
+                  <p class="pre-heading-product pre-heading-product--price">
+                    Starting from
+                  </p>
+                  <h2 class="price-product">29.999 &euro;</h2>
+                </div>
+                <button class="buy-now-cta">Buy Now</button>
+              </div>
+            </div>
+
+            <div class="product-car">
+              <div class="product-car-image">
+                <img
+                  src="./assets/Products/product-card-audi-a4.png"
+                  alt="Audi-A4"
+                />
+              </div>
+
+              <div class="product-car-about">
+                <p class="pre-heading-product">5 seats, 4 doors</p>
+                <h2 class="heading-product">Audi A4 2020</h2>
+                <p class="configurator-product" id="configurator-2">
+                  Configurator
+                </p>
+              </div>
+
+              <ul class="desc-list-product">
+                <li>Includes 300 free km</li>
+                <li>Theft Protection</li>
+                <li>Non Refundable</li>
+              </ul>
+
+              <div class="product-car-pricing">
+                <div class="product-car-pricing-price">
+                  <p class="pre-heading-product pre-heading-product--price">
+                    Starting from
+                  </p>
+                  <h2 class="price-product">24.999 &euro;</h2>
+                </div>
+                <button class="buy-now-cta">Buy Now</button>
+              </div>
+            </div>
+
+            <div class="product-car">
+              <div class="product-car-image">
+                <img
+                  src="./assets/Products/product-card-audi-a3.png"
+                  alt="Audi-A3"
+                />
+              </div>
+
+              <div class="product-car-about">
+                <p class="pre-heading-product">5 seats, 4 doors</p>
+                <h2 class="heading-product">Audi A3 2020</h2>
+                <p class="configurator-product" id="configurator-3">
+                  Configurator
+                </p>
+              </div>
+
+              <ul class="desc-list-product">
+                <li>Includes 300 free km</li>
+                <li>Theft Protection</li>
+                <li>Non Refundable</li>
+              </ul>
+
+              <div class="product-car-pricing">
+                <div class="product-car-pricing-price">
+                  <p class="pre-heading-product pre-heading-product--price">
+                    Starting from
+                  </p>
+                  <h2 class="price-product">19.999 &euro;</h2>
+                </div>
+                <button class="buy-now-cta">Buy Now</button>
+              </div>
+            </div>
+
+            <div class="product-car">
+              <div class="product-car-image">
+                <img
+                  src="./assets/Products/product-card-audi-q7.png"
+                  alt="Audi-Q7"
+                />
+              </div>
+
+              <div class="product-car-about">
+                <p class="pre-heading-product">5 seats, 4 doors</p>
+                <h2 class="heading-product">Audi Q7 2020</h2>
+                <p class="configurator-product" id="configurator-4">
+                  Configurator
+                </p>
+              </div>
+
+              <ul class="desc-list-product">
+                <li>Includes 300 free km</li>
+                <li>Theft Protection</li>
+                <li>Non Refundable</li>
+              </ul>
+
+              <div class="product-car-pricing">
+                <div class="product-car-pricing-price">
+                  <p class="pre-heading-product pre-heading-product--price">
+                    Starting from
+                  </p>
+                  <h2 class="price-product">39.999 &euro;</h2>
+                </div>
+                <button class="buy-now-cta">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact us section -->
+      <section class="contact-us">
+        <div class="contact-us-content container-inner">
+          <div class="contact-us-content-left">
+            <div style="z-index: 1000; position: relative">
+              <p class="pre-heading pre-heading--contact-us">CONTACT US</p>
+              <h1 class="heading heading-1 heading-1--white">
+                If you have any questions, don't hesitate to contact us.
+              </h1>
+            </div>
+            <img src="./assets/Images/contact-form-img.png" alt="audi-car" />
+          </div>
+          <div class="contact-us-content-right">
+            <form>
+              <input type="text" placeholder="ENTER YOUR NAME" class="input" />
+              <input type="text" placeholder="ENTER YOUR EMAIL" class="input" />
+              <textarea
+                placeholder="YOUR MESSAGE"
+                name="message"
+                rows="10"
+              ></textarea>
+              <input type="submit" value="SUBMIT" class="submit-cta" />
+            </form>
+          </div>
+        </div>
+        <div class="contact-us-footer container-inner">
+          <p class="pre-heading pre-heading--white-contact-us">
+            2020 FSD. ALL RIGHTS RESERVED
           </p>
+          <div class="contact-us-footer-terms">
+            <p class="pre-heading pre-heading--white-contact-us">
+              TERMS OF AGREEMENT
+            </p>
+            <p class="pre-heading pre-heading--white-contact-us">
+              2020 FSD. ALL RIGHTS RESERVED
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Configurators -->
+      <div class="configurator-modal configurator-modal-1" id="configurator-modal-1">
+        <div class="configurator container">
+          <div class="car">
+            <div>
+              <div class="product-car-image">
+                <img
+                  src="./assets/Products/product-card-audi-q3.png"
+                  alt="Audi-Q7"
+                />
+              </div>
+              <div class="product-car-about">
+                <p class="pre-heading-product">5 seats, 4 doors</p>
+                <h2 class="heading heading--product">Audi Q3 2020</h2>
+              </div>
+            </div>
+            <div class="price">
+              <p class="pre-heading-product pre-heading-product--configurator">
+                Starting from
+              </p>
+              <h2 class="price-product price-product--configurator car-price" id="cp1">
+                29.999 &euro;
+              </h2>
+            </div>
+          </div>
+          <div class="equipment">
+            <div class="equipment-text">
+              <h2 class="heading heading--equipment">Audi Configurator</h2>
+              <p class="pre-heading-product pre-heading-product--equipment">
+                Create your own audi.
+              </p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c1" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  48-V electrical system
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c1">0,- EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c2" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Adaptive air suspension - sport
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c2">278,60 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c3" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Acoustic side windows - optional
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c3">558,78 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c4" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Acoustic and heat-insulating glass
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c4">357,29 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c5" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Ambiental LED
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c5">637,48 EUR</p>
+            </div>
+          </div>
+          <div class="exit" id="exit-configurator-1">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="times"
+              class="svg-inline--fa fa-times fa-w-11"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 352 512"
+              fill="currentColor"
+            >
+              <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+      
+      <div class="configurator-modal configurator-modal-2" id="configurator-modal-2">
+        <div class="configurator container">
+          <div class="car">
+            <div>
+              <div class="product-car-image">
+                <img
+                  src="./assets/Products/product-card-audi-a4.png"
+                  alt="Audi-Q7"
+                />
+              </div>
+              <div class="product-car-about">
+                <p class="pre-heading-product">5 seats, 4 doors</p>
+                <h2 class="heading heading--product">Audi A4 2020</h2>
+              </div>
+            </div>
+            <div class="price">
+              <p class="pre-heading-product pre-heading-product--configurator">
+                Starting from
+              </p>
+              <h2 class="price-product price-product--configurator car-price" id="cp2">
+                24.999 &euro;
+              </h2>
+            </div>
+          </div>
+          <div class="equipment">
+            <div class="equipment-text">
+              <h2 class="heading heading--equipment">Audi Configurator</h2>
+              <p class="pre-heading-product pre-heading-product--equipment">
+                Create your own audi.
+              </p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c21" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  48-V electrical system
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c21">0,- EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c22" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Adaptive air suspension - sport
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c22">278,60 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c23" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Acoustic side windows - optional
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c23 ">558,78 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c24" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Acoustic and heat-insulating glass
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c24">357,29 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c25" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Ambiental LED
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c25">637,48 EUR</p>
+            </div>
+          </div>
+          <div class="exit" id="exit-configurator-2">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="times"
+              class="svg-inline--fa fa-times fa-w-11"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 352 512"
+              fill="currentColor"
+            >
+              <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Featured section -->
-    <section class="featured"></section>
+      <div class="configurator-modal configurator-modal-3" id="configurator-modal-3">
+        <div class="configurator container">
+          <div class="car">
+            <div>
+              <div class="product-car-image">
+                <img
+                  src="./assets/Products/product-card-audi-a3.png"
+                  alt="Audi-Q7"
+                />
+              </div>
+              <div class="product-car-about">
+                <p class="pre-heading-product">5 seats, 4 doors</p>
+                <h2 class="heading heading--product">Audi A3 2020</h2>
+              </div>
+            </div>
+            <div class="price">
+              <p class="pre-heading-product pre-heading-product--configurator">
+                Starting from
+              </p>
+              <h2 class="price-product price-product--configurator car-price" id="cp3">
+                19.999 &euro;
+              </h2>
+            </div>
+          </div>
+          <div class="equipment">
+            <div class="equipment-text">
+              <h2 class="heading heading--equipment">Audi Configurator</h2>
+              <p class="pre-heading-product pre-heading-product--equipment">
+                Create your own audi.
+              </p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c31" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  48-V electrical system
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c31">0,- EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c32" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Adaptive air suspension - sport
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c32">278,60 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c33" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Acoustic side windows - optional
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c33">558,78 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c34" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Acoustic and heat-insulating glass
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c34">357,29 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c35" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Ambiental LED
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c35">637,48 EUR</p>
+            </div>
+          </div>
+          <div class="exit" id="exit-configurator-3">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="times"
+              class="svg-inline--fa fa-times fa-w-11"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 352 512"
+              fill="currentColor"
+            >
+              <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="configurator-modal configurator-modal-4" id="configurator-modal-4">
+        <div class="configurator container">
+          <div class="car">
+            <div>
+              <div class="product-car-image">
+                <img
+                  src="./assets/Products/product-card-audi-q7.png"
+                  alt="Audi-Q7"
+                />
+              </div>
+              <div class="product-car-about">
+                <p class="pre-heading-product">5 seats, 4 doors</p>
+                <h2 class="heading heading--product">Audi Q7 2020</h2>
+              </div>
+            </div>
+            <div class="price">
+              <p class="pre-heading-product pre-heading-product--configurator">
+                Starting from
+              </p>
+              <h2 class="price-product price-product--configurator car-price" id="cp4">
+                39.999 &euro;
+              </h2>
+            </div>
+          </div>
+          <div class="equipment">
+            <div class="equipment-text">
+              <h2 class="heading heading--equipment">Audi Configurator</h2>
+              <p class="pre-heading-product pre-heading-product--equipment">
+                Create your own audi.
+              </p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c41" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  48-V electrical system
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c41">0,- EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c42" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Adaptive air suspension - sport
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c42">278,60 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c43" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Acoustic side windows - optional
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c43">558,78 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c44" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Acoustic and heat-insulating glass
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c44">357,29 EUR</p>
+            </div>
+            <div class="equipment-line">
+              <div>
+                <input type="checkbox" id="c45" class="checkbox" />
+                <p class="pre-heading-product pre-heading-product--equipment-2">
+                  Ambiental LED
+                </p>
+              </div>
+              <p class="price-product price-product--equipment" id="c45">637,48 EUR</p>
+            </div>
+          </div>
+          <div class="exit" id="exit-configurator-4">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="times"
+              class="svg-inline--fa fa-times fa-w-11"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 352 512"
+              fill="currentColor"
+            >
+              <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="background-dimmer" id="background-dimmer"></div>
     <script src="./index.js"></script>
   </body>
 </html>

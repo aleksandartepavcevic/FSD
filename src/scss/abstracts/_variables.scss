@@ -6,6 +6,9 @@ $color3: #ffffff;
 $color4: #fa292c;
 $color5: #fee9e8;
 $color6: #011f05;
+$color7: #27282d;
+$color8: #f1f1f5;
+
 // Font family
 
 $font1: 'Montserrat';
@@ -15,6 +18,25 @@ $font2: 'Roboto Condensed';
 
 $fs-xlg: 4.8rem;
 $fs-lg: 3.6rem;
+$fs-lmd: 2.4rem;
 $fs-md: 1.8rem;
 $fs-sm: 1.4rem;
 $fs-xsm: 1.2rem;
+$fs-xxsm: 1.1rem;
+
+//  Container widths
+
+$container-xxlg: 1320px;
+$container-xlg: 1140px;
+$container-large: 960px;
+$container-medium: 720px;
+$container-small: 540px;
+
+// Breakpoints
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
